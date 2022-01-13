@@ -18,6 +18,7 @@ function calc(){
     id = event.target.id;
     answer = document.getElementById("view");
     if(id != "+" && id != "equal" && id != "minus" && id !="divide" && id != "ply" && id != "reset" && id != "del"){
+        prev = "" //watch out
         string += id;
         answer.innerHTML = string;}
 
