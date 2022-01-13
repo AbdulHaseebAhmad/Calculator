@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Merriweather:wght@300&family=Montserrat:wght@100&family=Open+Sans:wght@400;600;700&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600&family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+
+            <div class="header" id="header">
+                <div class="header-left">calc</div>
+
+                <div class="header-right">
+                   THEME
+                    <div class="toggle1">
+                        <div class="numbers">
+                            <div id="one" onclick="changeTheme()">1</div>
+                            <div id="two" onclick="changeTheme()">2</div>
+                            <div id="three" onclick="changeTheme()">3</div></div>
+                        <div class="toggle">
+                            <div class="circle" id="circle-1"></div>
+                            <div class="circle" id="circle-2"></div>
+                            <div class="circle" id="circle-3"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div dir="rtl" class="view" id="view">
+                0.00
+            </div>
+
+
+            <div class="main" id="main">
+
+                <div class="column-1" id="column-1">
+                    <div class="column-10 box" id="7" onclick="calc()">7</div>
+                    <div class="column-11 box" id="4" onclick="calc()">4</div>
+                    <div class="column-12 box" id="1" onclick="calc()">1</div>
+                    <div class="column-13 box" id="." onclick="calc()">.</div>
+                </div>
+
+
+                <div class="column-2">
+                    <div class="column-20 box" id="8" onclick="calc()">8</div>
+                    <div class="column-21 box" id="5" onclick="calc()">5</div>
+                    <div class="column-22 box" id="2" onclick="calc()">2</div>
+                    <div class="column-23 box" id="0" onclick="calc()">0</div>
+                </div>
+
+                <div class="column-3">
+                    <div class="column-30 box" id="9" onclick="calc()">9</div>
+                    <div class="column-31 box" id="6" onclick="calc()">6</div>
+                    <div class="column-32 box" id="3" onclick="calc()">3</div>
+                    <div class="column-33 box" id="divide" onclick="calc()">/</div>
+                </div>
+
+                <div class="column-4">
+                    <div class="column-30" id="del" onclick="del()">DEL</div>
+                    <div class="column-31 box" id="+" onclick="calc()">+</div>
+                    <div class="column-32 box" id="minus" onclick="calc()">-</div>
+                    <div class="column-33 box" id="ply" onclick="calc()">&#215</div>
+                </div>
+
+                <div class="row">
+                    <div class="Button" id="reset" onclick="calc()">RESET</div>
+                    <div class="Button" id="equal" onclick="calc()">=</div>
+                </div>
+            </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
+

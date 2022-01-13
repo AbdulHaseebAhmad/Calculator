@@ -1,0 +1,154 @@
+/*
+Learning Outcome
+box-shadow property gives shadow to the element it is placed inside;
+h-offset v-offset blur spread color inset
+h-offset=how much you want the shadow to be on a hrizontal line +value puts the shadow o right
+v-offset= how much you want the shadow to be on a vertical line +value below the object -value means above the object
+Blur= blurs the shadow higher the number higher the blur
+radial=makes the shadow radial with respect to its element
+inset moves the shadow inwards of the object
+*/
+
+body{
+    margin:0px;
+    font-family: 'Spartan', sans-serif;
+    font-weight:700;
+    font-size:30px;
+    height:100vh;
+    width:100vw;}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    height:100%;
+    width:100%;
+    background:hsl(222, 26%, 31%);
+    margin:0px;}
+
+
+.header{
+    width:420px;
+    display:flex;
+    justify-content:space-between;
+    align-items:Center;
+    padding:20px;
+    margin-top:10px;
+    color:white;}
+
+.header-right{
+    font-size:10px;
+    display:flex;
+    align-items:end;
+    justify-content:center;
+    gap:10px;}
+
+.toggle1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;}
+
+.numbers{
+    display:flex;
+    gap:10px;}
+
+.toggle{
+     display:flex;
+     border-radius:15px;
+     background:hsl(224, 36%, 15%);
+     padding:5px;
+     gap:5px;
+     width:40px;
+     margin-top:2.px;}
+
+.circle{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:hsl(6, 63%, 50%);}
+
+#circle-1{
+    visibility:hidden;}
+
+#circle-2{
+     visibility:hidden;}
+
+#circle-3{
+     visibility:hidden;}
+
+
+.view{
+    width:375px;
+    padding:30px;
+    background:hsl(224, 36%, 15%);
+    color:white;
+    font-weight:bold;
+    border-radius:10px;}
+
+.main{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:100px 100px 100px 100px;
+    gap:5px;
+    place-items:center;
+    background:hsl(223, 31%, 20%) ;
+    color:hsl(221, 14%, 31%);
+    border-radius:10px;
+    padding:10px;}
+
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:Center;
+    width:37px;
+    height:7px;
+    font-size:25px;
+    margin:15px;
+    padding:20px;
+    background:hsl(30, 25%, 89%);
+    border-radius:10px;
+    box-shadow:0px 3px hsl(28, 16%, 65%);}
+
+.row{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    grid-column:1/-1;}
+
+.Button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:195px;
+    height:55px;
+    background:hsl(225, 21%, 49%);
+    border-radius:10px;
+    color:white;
+    box-shadow:0px 3px hsl(224, 28%, 35%)}
+
+#del{
+    background:hsl(225, 21%, 49%);
+    color:white;
+    box-shadow:0px 3px hsl(224, 28%, 35%);
+    display:flex;
+    justify-content:center;
+    align-items:Center;
+    width:37px;
+    height:7px;
+    font-size:25px;
+    margin:15px;
+    padding:20px;
+    border-radius:10px;}
+
+#equal{
+    background:hsl(6, 63%, 50%);
+    box-shadow:0px 3px hsl(6, 70%, 34%)}
+
+@media screen and (max-width:800px){
+    .container{
+    padding:0px 30px 40px 20px;
+    margin:0px 0px 0px 0px;            }
+    }
