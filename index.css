@@ -71,7 +71,7 @@ body{
     background:hsl(6, 63%, 50%);}
 
 #circle-1{
-    visibility:hidden;}
+    visibility:visible;}
 
 #circle-2{
      visibility:hidden;}
